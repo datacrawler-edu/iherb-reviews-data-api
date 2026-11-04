@@ -1,0 +1,147 @@
+{
+  "repository": {
+    "name": "iherb-reviews-data-api",
+    "description": "iHerb reviews API examples for Python, JavaScript and cURL: collect review rows by product URL or ID, batch product requests and export existing datasets to CSV.",
+    "homepage": "https://apify.com/datascraperes/iherb-reviews-extractor?fpr=edudata",
+    "language": "Python",
+    "license": "MIT"
+  },
+  "actor": {
+    "displayName": "iHerb Reviews Extractor | Ratings, Text & Photos",
+    "id": "datascraperes/iherb-reviews-extractor",
+    "storeUrl": "https://apify.com/datascraperes/iherb-reviews-extractor",
+    "apiBaseUrl": "https://api.apify.com/v2/acts/datascraperes~iherb-reviews-extractor",
+    "description": "Hosted public iHerb customer reviews, one row per unique product/review pair, with ratings, text, dates and photo links when available."
+  },
+  "affiliate": {
+    "enabled": true,
+    "parameter": "fpr=edudata",
+    "actorUrl": "https://apify.com/datascraperes/iherb-reviews-extractor?fpr=edudata",
+    "pricingUrl": "https://apify.com/pricing?fpr=edudata"
+  },
+  "platform": {
+    "apifyFreePlan": {
+      "monthlyPrepaidUsage": "$5",
+      "renewsMonthly": true,
+      "noCreditCardRequired": true,
+      "unusedCreditsExpire": true,
+      "sourceUrl": "https://apify.com/pricing?fpr=edudata"
+    }
+  },
+  "interfaces": {
+    "web": {
+      "enabled": true,
+      "inputTab": "Input",
+      "outputTab": "Dataset",
+      "runAction": "Start",
+      "primaryInput": "products",
+      "inputLabel": "Products",
+      "inputSummary": "Paste iHerb product/review URLs or numeric product IDs and choose total and per-product review limits.",
+      "exportFormats": [
+        "JSON",
+        "CSV",
+        "Excel"
+      ]
+    },
+    "api": {
+      "enabled": true,
+      "examples": [
+        "cURL",
+        "Python",
+        "JavaScript"
+      ]
+    }
+  },
+  "seo": {
+    "primaryKeyword": "iHerb reviews API Python",
+    "secondaryKeywords": [
+      "export iHerb review text CSV",
+      "iHerb reviews product URL API",
+      "iHerb customer feedback dataset"
+    ],
+    "topics": [
+      "apify",
+      "iherb",
+      "reviews",
+      "reviews-api",
+      "python",
+      "csv",
+      "api-examples",
+      "customer-feedback"
+    ],
+    "longTailIntents": [
+      "Export iHerb review text and ratings to CSV",
+      "Collect reviews from product URLs with Python",
+      "Batch bounded review requests for multiple products"
+    ]
+  },
+  "content": {
+    "readmeSectionOrder": [
+      "What this repository helps you do",
+      "Example result",
+      "Run without code",
+      "Try it with Apify's free plan",
+      "Quick start for developers",
+      "Input example",
+      "Request examples",
+      "Output fields",
+      "Common use cases",
+      "Long-tail use-case sections",
+      "FAQ",
+      "Limits and pricing",
+      "Hosted version",
+      "Responsible use",
+      "Support"
+    ],
+    "exampleFiles": [
+      "examples/python/collect_reviews.py",
+      "examples/python/batch_product_reviews.py",
+      "examples/python/export_reviews_csv.py"
+    ],
+    "faqFile": "docs/faq.md"
+  },
+  "pricing": {
+    "summary": "PAY_PER_EVENT:review-result for each unique review saved and available in the Dataset. No product/start event.",
+    "unit": "one delivered review",
+    "price": "FREE:USD0.50per1000reviews;BRONZE0.45,SILVER0.40,GOLD/PLATINUM/DIAMOND0.375per1000"
+  },
+  "distribution": {
+    "githubUrl": "https://github.com/datacrawler-edu/iherb-reviews-data-api",
+    "actorToGithubUrl": "https://github.com/datacrawler-edu/iherb-reviews-data-api",
+    "githubToActorUrl": "https://apify.com/datascraperes/iherb-reviews-extractor?fpr=edudata",
+    "organizationHubUrl": "https://github.com/datacrawler-edu",
+    "firstRelease": {
+      "tag": "v1.0.0",
+      "title": "iHerb reviews API integration examples"
+    }
+  },
+  "examples": {
+    "inputFile": "data/sample-input.json",
+    "outputFile": "data/sample-output.json",
+    "csvFile": "data/sample-output.csv"
+  },
+  "measurement": {
+    "observationWindowDays": 30,
+    "githubSignals": [
+      "views",
+      "uniqueVisitors",
+      "clones",
+      "referrers",
+      "popularContent"
+    ],
+    "apifySignals": [
+      "users",
+      "runs",
+      "datasetItems",
+      "revenue"
+    ],
+    "searchChecks": [
+      "site:github.com/datacrawler-edu/iherb-reviews-data-api",
+      "iHerb reviews API Python CSV"
+    ]
+  },
+  "support": {
+    "issuesUrl": "https://github.com/datacrawler-edu/iherb-reviews-data-api/issues",
+    "actorSupportUrl": "https://apify.com/datascraperes/iherb-reviews-extractor?fpr=edudata"
+  }
+}
